@@ -4,11 +4,12 @@
 
 class Mortgage {
 
-  constructor(price, downPayment, rate, amortization) {
+  constructor(price, downPayment, rate, amortization, term) {
     this.purchasePrice = price;
     this.downPaymentRate = downPayment / 100; // Convert percentage to decimal
     this.interestRate = rate / 100; // Convert percentage to decimal
     this.amortization = amortization;
+    this.termMonths = term * 12;
 
     // Calculate some variables that are needed
     this.downPaymentAmount = this.purchasePrice * this.downPaymentRate;
@@ -30,7 +31,7 @@ class Mortgage {
     let balance = this.loanAmount;
     let index = 0;
     let output = [];
-    while (index < this.amortizationMonths) {
+    while (index < this.termMonths) {
       index++;
       let interest = balance * this.monthlyRate;
       let principal = this.monthlyPayment - interest;
