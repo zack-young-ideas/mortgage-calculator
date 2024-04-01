@@ -40,6 +40,7 @@ function Form(props) {
   const [downPayment, setDownPayment] = useState(0);
   const [interestRate, setInterestRate] = useState(0);
   const [amortization, setAmortization] = useState(0);
+  const [term, setTerm] = useState(0);
 
   function submit(event) {
     // When the user clicks "Submit", the values of the four
@@ -49,7 +50,8 @@ function Form(props) {
     const down = Number(downPayment.replace(/%/g, ''));
     const rate = Number(interestRate.replace(/%/g, ''));
     const years = Number(amortization);
-    props.submitData(price, down, rate, years);
+    const mortgageTerm = Number(term);
+    props.submitData(price, down, rate, years, mortgageTerm);
   }
 
   return (
@@ -73,6 +75,11 @@ function Form(props) {
                  label={'Amortization Length (Years)'}
                  prefix={''}
                  setInput={setAmortization}
+                 suffix={''} />
+      <FormField decimal={false}
+                 label={'Mortgage Term (Years)'}
+                 prefix={''}
+                 setInput={setTerm}
                  suffix={''} />
       <div className="mb-3">
         <button className="btn btn-primary"
