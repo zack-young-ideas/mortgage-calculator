@@ -12,11 +12,14 @@ function FormField(props) {
       <label className="form-label"
              htmlFor={id}>{props.label}</label>
       <NumericFormat className="form-control"
-                     decimalSeparator=','
+                     decimalScale={2}
+                     decimalSeparator='.'
+                     fixedDecimalScale={true}
                      id={id}
                      onInput={(event) => props.setInput(event.target.value)}
                      prefix={props.prefix}
-                     suffix={props.suffix} />
+                     suffix={props.suffix}
+                     thousandSeparator={true} />
     </div>);
   } else {
     output = (<div className="mb-3">
