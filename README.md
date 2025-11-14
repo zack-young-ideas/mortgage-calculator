@@ -1,6 +1,6 @@
 # Mortgage Calculator
 
-A simple, responsive mortgage calculator built with **React** (via `create-react-app`). This tool allows users to estimate their mortgage payments by entering key mortgage details such as purchase price, down payment, interest rate, amortization period, and mortgage term.
+A simple, responsive mortgage calculator built with **React**. This tool allows users to estimate their mortgage payments by entering key mortgage details such as purchase price, down payment, interest rate, amortization period, and mortgage term.
 
 [View the demo](https://zack-young-ideas.github.io/mortgage-calculator/)
 
