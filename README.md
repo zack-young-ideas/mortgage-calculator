@@ -1,12 +1,47 @@
-# Mortgage Amortization Calculator
+# Mortgage Calculator
 
-This React app calculates and displays the monthly cash flows of a
-mortgage based on information provided by the user.
+A simple, responsive mortgage calculator built with **React** (via `create-react-app`). This tool allows users to estimate their mortgage payments by entering key mortgage details such as purchase price, down payment, interest rate, amortization period, and mortgage term.
 
 [View the demo](https://zack-young-ideas.github.io/mortgage-calculator/)
 
+## Tech Stack
+- **React 18**
+- **Bootstrap 5**
+- **Sass**
+
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/zack-young-ideas/mortgage-calculator.git
+cd mortgage-calculator
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run in Development Mode
+
+```bash
+npm start
+```
+
+This starts the app at http://localhost:3000.
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/) License.
+This project is open source and available under the [MIT License](LICENSE).
 
-Copyright (c) 2023 Zachary Young.
+## Author
+
+Zack Young
