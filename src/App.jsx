@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Form from './Form';
-import Mortgage from './utils';
-import Table from './Table';
+import Form from './Form.jsx';
+import Mortgage from './utils.js';
+import Table from './Table.jsx';
 
 function App() {
   const [rows, setRows] = useState([]);
